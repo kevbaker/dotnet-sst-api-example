@@ -10,12 +10,12 @@ export default {
   },
   stacks(app) {
     app.setDefaultFunctionProps({
-      runtime: "dotnetcore3.1",
+      runtime: "dotnet6",
     });
     app.stack(function Stack({ stack }) {
       const api = new Api(stack, "api", {
         routes: {
-          "GET /": "Api::Api.Handlers::Handler",
+          "GET /": "csharp::csharp.Function::FunctionHandler",
         },
       });
       stack.addOutputs({
