@@ -1,4 +1,4 @@
-# How to create a REST API in C#
+# How to create a REST API in Csharp
 
 An example serverless app created with SST.
 
